@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candleaf - Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <!-- Circle -->
+                <circle cx="50" cy="50" r="45" stroke="#8B4513" stroke-width="6" fill="#fff8f0"/>
+                
+                <!-- Handmade Icon -->
+                <text x="50%" y="55%" text-anchor="middle" font-size="50">🧵</text>
+            </svg>
+            <span>Handmade Bliss</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#discovery">Discovery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="nav-icons">
+                <button title="Profile">👤</button>
+                <button title="Wishlist">❤️</button>
+                <button title="Cart">🛒</button>
+            </div>
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Product Section -->
+    <div class="container">
+        <!-- Left: Product Image -->
+        <div class="product-image-section">
+            <div class="product-image">
+                <img src="https://diybaazar.com/publicuploads/seller/products/mini-lippanart-wallhanging-1-0_1733293292.jpg" alt="Product Image">
+            </div>
+            <p class="product-description-text">
+                All handcrafted with love, Handmade Bliss is made for your special moments and wellness.
+            </p>
+            <p class="shipping-badge">🚚 FREE SHIPPING</p>
+        </div>
+
+        <!-- Right: Product Details -->
+        <div class="product-details">
+            <div class="product-header">
+                <h1 class="product-title">Premium Handmade Artisan Product</h1>
+                <p class="product-price">₹299</p>
+            </div>
+            <!-- Purchase Option -->
+
+            <div class="purchase-options">
+                <label class="purchase-option">
+                    <input type="radio" name="purchase" checked>
+                    <label for="">One time purchase</label>
+                </label>
+            </div>
+
+            <!-- Subscription -->
+            <div>
+                <label>
+                    <input type="radio" name="purchase">
+                    Subscribe and delivery every
+                </label>
+
+                <select>
+                    <option>4 weeks</option>
+                    <option>8 weeks</option>
+                    <option>12 weeks</option>
+                </select>
+
+                <p>
+                    Subscribe now and get 10% discount on every recurring order.
+                    The discount will be applied at checkout.
+                    <a href="#">See details</a>
+                </p>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity-section">
+                <label class="quantity-label">Quantity</label>
+                <div class="quantity-input">
+                    <button onclick="decreaseQuantity()">−</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="add-to-cart-btn">+Add to cart</button>
+
+            <!-- Product Info -->
+            <!-- Product Specifications -->
+            <div class="product-specs">
+                <div class="spec-item">
+                    <div class="spec-label">Material</div>
+                    <div class="spec-value">Wood, clay, fabric, or mixed artisan materials</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Usage</div>
+                    <div class="spec-value">Home decor, gifting, or personal use</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Style</div>
+                    <div class="spec-value">Traditional & contemporary handcrafted design</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Dimensions</div>
+                    <div class="spec-value">Varies by product</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Weight</div>
+                    <div class="spec-value">Lightweight & durable</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Handmade</div>
+                    <div class="spec-value">100% Artisan Crafted</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Handmade Bliss. All rights reserved.</p>
+    <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms & Conditions</a> | 
+        <a href="#">About Us</a>
+    </p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
